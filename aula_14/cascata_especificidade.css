@@ -1,0 +1,18 @@
+    p{
+    
+
+    }
+
+    .classe1{
+
+    }
+    
+    #meuId {
+        
+    }
+    
+    .classe2 p #meuId #outroId {
+
+    }
+
+    p.classe1.classe2>div div div.classe3 #meuId{}
