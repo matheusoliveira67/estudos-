@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-BR">
+    <title>Float - Segundo Teste</title>
+</head>
+<style>
+    /* aumentamos o tamanho da fonte */
+body{
+    font-size: 26px;
+}
+
+/* zeramos a margem do h1 */
+
+h1{
+    margin: 0;
+}
+
+article{
+    background-color: beige;
+}
+.caixa1, .caixa2{
+background-color: beige;
+}
+.caixa1{
+    float: left;
+    width: 40%;
+}
+.caixa2{
+    float: right;
+    width: 40%;
+}
+footer{
+    background-color: cornflowerblue;
+}
+
+/* pseudoelemento first-letter de todo p que seja 
+    filho direto de um article*/
+article >p::first-letter{
+    font-size: 80px;
+}
+h1::before{
+    content:"Titulo da página: "
+}
+h1::after{
+    content:"2022"
+}
+
+article::after{
+    /* nenhum conteudo */
+    content: "";
+    /* display block */
+    display: block;
+    /* removendo efeito ficat */
+    clear: both;
+}
+
+</style>
+<body>
+    <!-- use esse emmet para comecar e depois complete -->
+    <!-- article>h1+p.*2  -->
+    <article>
+        <h1>Lorem, ipsum.</h1>
+        <p class="caixa1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit iste sed soluta nulla provident molestias sint delectus facilis quidem autem, commodi itaque 
+            ullam ipsum sequi rem officiis consequatur ad repudiandae!</p>
+        <p class="caixa2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eaque laudantium voluptatem libero delectus omnis 
+            nulla maxime at, a blanditiis? Repellendus dolores id debitis 
+            voluptatibus impedit? Voluptas perspiciatis quo tempore distinctio!</p>
+            <!-- <div style="clear:both"></div> -->
+        </article>
+
+    <footer>
+        Lorem ipsum dolor sit amet.
+    </footer>
+</body>
+</html>
